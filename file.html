@@ -9,12 +9,18 @@
     body {
       margin: 0;
       font-family: 'Poppins', sans-serif;
-      background-color: #0d0d0d;
-      color: white;
+      background-image: url(https://i.postimg.cc/3RLCq7Ch/Screenshot-20251111-200243-Google.jpg); /* your image link here */
+  background-size: cover;       /* makes image cover the screen */
+  background-repeat: no-repeat; /* prevents image from repeating */
+  background-attachment: fixed; /* keeps it still while scrolling */
+  background-position: center;  /* centers the image */
+  color: white;
+
     }
 
     header {
-      background-color: #1a1a1a;
+       background-color: rgba(26, 26, 26, 0.4); /* 0.7 = 70% visible, 30% transparent */
+      
       padding: 15px 0;
       text-align: center;
       box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
@@ -28,7 +34,7 @@
     }
 
     .search-bar {
-      text-align: center;
+      text-align:center;
       margin: 20px;
     }
 
@@ -52,20 +58,33 @@
       padding: 20px;
     }
 
-    .movie {
-      background-color: #1a1a1a;
-      border-radius: 15px;
-      width: 400px;
-      padding: 15px;
-      text-align: center;
-      box-shadow: 0 4px 12px rgba(255, 255, 255, 0.1);
-      transition: transform 0.3s, box-shadow 0.3s;
-    }
+   .movie {
+  background-color: rgba(26, 26, 26, 0.4); /* Slightly transparent box */
+  border-radius: 15px;
+  width: 25%; /* 3 movies per row on large screens */
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
 
-    .movie:hover {
-      transform: scale(1.03);
-      box-shadow: 0 8px 16px rgba(0, 255, 244, 0.4);
-    }
+.movie:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 16px rgba(0, 255, 244, 0.4);
+}
+
+/* 📱 Responsive design */
+@media (max-width: 900px) {
+  .movie {
+    width: 45%; /* 2 movies per row on mobile/tablet */
+  }
+}
+
+@media (max-width: 500px) {
+  .movie {
+    width: 90%; /* 1 movie per row on very small screens */
+  }
+}
 
     img {
       width: 100%;
@@ -102,8 +121,8 @@
     footer {
       text-align: center;
       padding: 15px;
-      background-color: #111;
-      color: #777;
+      background-color: rgba(26, 26, 26, 0.3); /* 0.7 = 70% visible, 30% transparent */
+      color: #00B1FF;
       font-size: 14px;
       margin-top: 40px;
     }
@@ -193,8 +212,22 @@
       <h3>Hate story 3</h3>
       <p>actin movie</p>
       <a href="https://youtu.be/dEnaHuRkkxI?si=cjRGiXmhyLbsmQW7" class="btn">Watch Now</a>
-    </div> 
- <!-- 🎞️ Movie 13 -->
+    </div>   
+    <!-- 🎞️ Movie 11 -->
+    <div class="movie">
+      <img src="https://i.imghippo.com/files/Byl1172Kpk.jpg" alt="Movie 4 Thumbnail">
+      <h3>Mastermind</h3>
+      <p>actin movie</p>
+      <a href="https://youtu.be/7-Cstc7fgPg?si=6a88LVZPl-UoJxlz" class="btn">Watch Now</a>
+    </div>
+        <!-- 🎞️ Movie 12 -->
+    <div class="movie">
+      <img src="https://i.imghippo.com/files/TIH3691BU.jpg" alt="Movie 4 Thumbnail">
+      <h3>name of movie</h3>
+      <p>actin movie</p>
+      <a href="https://youtu.be/HarIdSznhfQ?si=XfnQ4jpotko9HPaf" class="btn">Watch Now</a>
+    </div>
+        <!-- 🎞️ Movie 13 -->
     <div class="movie">
       <img src="https://i.imghippo.com/files/SRv2655LGo.jpg" alt="Movie 4 Thumbnail">
       <h3>name of movie</h3>
