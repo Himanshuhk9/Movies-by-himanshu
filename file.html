@@ -2,265 +2,171 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <title>ABC Tuition Classes</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>🎬 Himanshu’s Movie World 🎥</title>
 
   <style>
     body {
       margin: 0;
-      font-family: 'Poppins', sans-serif;
-      background-image: url(https://i.postimg.cc/3RLCq7Ch/Screenshot-20251111-200243-Google.jpg); /* your image link here */
-  background-size: cover;       /* makes image cover the screen */
-  background-repeat: no-repeat; /* prevents image from repeating */
-  background-attachment: fixed; /* keeps it still while scrolling */
-  background-position: center;  /* centers the image */
-  color: white;
-
+      font-family: Arial, sans-serif;
+      background-color: #f4f6f9;
     }
 
     header {
-       background-color: rgba(26, 26, 26, 0.4); /* 0.7 = 70% visible, 30% transparent */
-      
-      padding: 15px 0;
-      text-align: center;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
-    }
-
-    header h1 {
-      margin: 0;
-      color: #00FFD1;
-      font-size: 28px;
-      letter-spacing: 1px;
-    }
-
-    .search-bar {
-      text-align:center;
-      margin: 20px;
-    }
-
-    input[type="text"] {
-      width: 60%;
-      padding: 10px;
-      border-radius: 25px;
-      border: none;
-      outline: none;
-      font-size: 16px;
-      background-color: #222;
+      background-color: #2c3e50;
       color: white;
+      padding: 20px;
       text-align: center;
     }
 
-    .movie-container {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 30px;
+    nav {
+      background-color: #34495e;
+      padding: 10px;
+      margin: 20PX;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    section {
       padding: 20px;
     }
 
-   .movie {
-  background-color: rgba(26, 26, 26, 0.4); /* Slightly transparent box */
-  border-radius: 15px;
-  width: 25%; /* 3 movies per row on large screens */
-  padding: 15px;
-  text-align: center;
-  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.1);
-  transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.movie:hover {
-  transform: scale(1.03);
-  box-shadow: 0 8px 16px rgba(0, 255, 244, 0.4);
-}
-
-/* 📱 Responsive design */
-@media (max-width: 900px) {
-  .movie {
-    width: 45%; /* 2 movies per row on mobile/tablet */
-  }
-}
-
-@media (max-width: 500px) {
-  .movie {
-    width: 90%; /* 1 movie per row on very small screens */
-  }
-}
-
-    img {
-      width: 100%;
-      height: 55%;
-      border-radius: 10px;
-      margin-bottom: 10px;
+    .card {
+      background: white;
+      padding: 20px;
+      margin: 15px ;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .about {
+      background-color: white;
+      padding: 20px;
+      margin: 2px;
+      border-radius:8px ;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .newstudent{
+      background-color: white;
+      padding: 20px;
+      margin: 15px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      
+    }
+    button {
+      padding: 10px 15px;
+      background-color: #2980b9;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
     }
 
-    .movie h3 {
-      color: #0094FF;
-      margin-bottom: 5px;
-    }
-
-    .movie p {
-      font-size: 14px;
-      color: #bbb;
-      margin-bottom: 10px;
-    }
-
-    .btn {
-      display: inline-block;
-      background-color: #00FFA0;
-      color: #0032FF;
-      padding: 8px 15px;
-      border-radius: 20px;
-      text-decoration: none;
-      transition: background-color 0.3s;
-    }
-
-    .btn:hover {
-      background-color: #0BE9FF;
+    button:hover {
+      background-color: #1f6391;
     }
 
     footer {
+      background-color: #2c3e50;
+      color: white;
       text-align: center;
-      padding: 15px;
-      background-color: rgba(26, 26, 26, 0.3); /* 0.7 = 70% visible, 30% transparent */
-      color: #00B1FF;
-      font-size: 14px;
-      margin-top: 40px;
+      padding: 10px;
+      margin-top: 20px;
     }
   </style>
 </head>
+
 <body>
 
-  <header>
-    <h1>🎬 Himanshu’s Movie World 🎥</h1>
-  </header>
+<header>
+  <h1>THE GIDE Tuition Classes</h1>
+  <p>Offline & Online Learning Platform</p>
+</header>
 
-  <div class="search-bar">
-    <input type="text" id="searchInput" placeholder="Search your favorite movie..." onkeyup="searchMovie()">
+<nav>
+  <a href="#about">About</a>
+  <a href="#classes">Classes</a>
+  <a href="#plans">Online Plans</a>
+  <a href="#contact"></a>
+</nav>
+
+<section id="about">
+  <div class="about">
+    <h2>About Teacher</h2>
+    <p>
+      Welcome to THE GIDE Tuition Classes.  
+      We provide quality education for school students with offline and online support.
+    </p>
+  </div>
+</section>
+
+<section id="classes">
+  <div class="card">
+    <style> 
+      
+    </style>
+    <h2>Offline Classes</h2>
+    <p>✔ Classroom teaching</p>
+    <p>✔ Notes & practice</p>
+    <p>✔ Regular tests</p>
   </div>
 
-  <div class="movie-container" id="movieList">
-
-    <!-- 🎞️ Movie 1 -->
-    <div class="movie">
-      <img src="https://i.postimg.cc/MG09p4MG/Screenshot-20251027-101300-Google.jpg" alt="Movie 1 Thumbnail">
-      <h3>Intelligent hacker</h3>
-      <p>A south indian movie with action and ai involement+hacking</p>
-      <a href="https://youtu.be/1DNgsmtXpD0?si=3wppCVh3JSAaY2zl" class="btn">Watch Now</a>
-    </div>
-
-    <!-- 🎞️ Movie 2 -->
-    <div class="movie">
-      <img src="https://i.postimg.cc/Y96N3mft/Screenshot-20251027-110908-Chrome.jpg" alt="Movie 2 Thumbnail">
-      <h3>Baaghi</h3>
-      <p>Baggi a action or comeddy movie</p>
-      <a href="https://youtu.be/wbW76EgUYSE?si=quc5M5CEb_1M-6Ua" class="btn">Watch Now</a>
-    </div>
-
-    <!-- 🎞️ Movie 3 -->
-    <div class="movie">
-      <img src="https://i.postimg.cc/GhxLC3zH/Screenshot-20251027-111720-Chrome.jpg" alt="Movie 3 Thumbnail">
-      <h3>Master</h3>
-      <p>Full hindi duved movie</p>
-      <a href="https://youtu.be/JrzK_jJsXho?si=M8WbNKv8hrxu0XfP" class="btn">Watch Now</a>
-    </div>
-
-    <!-- 🎞️ Movie 4 -->
-    <div class="movie">
-      <img src="https://i.postimg.cc/Kz1P6H2Z/Screenshot-20251027-112442-Chrome.jpg" alt="Movie 4 Thumbnail">
-      <h3>Puspa 2</h3>
-      <p>actin movie</p>
-      <a href="https://youtu.be/uttNRhknNiY?si=c7J65XsJM_jn0J6C" class="btn">Watch Now</a>
-    </div>
-    <!-- 🎞️ Movie 5 -->
-    <div class="movie">
-      <img src="https://i.postimg.cc/2ys4kK3y/Screenshot-20251027-195306-Google.jpg" alt="Movie 4 Thumbnail">
-      <h3>Leo</h3>
-      <p>actin movie</p>
-      <a href="https://youtu.be/2kcGHE_1Gxw?si=zzmOJgHqqZciS4im" class="btn">Watch Now</a>
+  <div class="card">
+    <h2>Online Classes</h2>
+    <p>✔ Live online classes</p>
+    <p>✔ Recorded videos</p>
+    <p>✔ Doubt solving</p>
+    <button onclick="alert('Online Class Link will be added later')">
+      Join Online Class
+    </button>
   </div>
-    <!-- 🎞️ Movie 6 -->
-    <div class="movie">
-      <img src="https://i.postimg.cc/ZRZKrkDB/Screenshot-20251027-200016-Chrome.jpg" alt="Movie 4 Thumbnail">
-      <h3>bhool bhulaia </h3>
-      <p>actin movie</p>
-      <a href="https://youtu.be/jzYxbnHHhY4?si=QTjmvGTIOawQE4Qm" class="btn">Watch Now</a>
-  </div>
-      <!-- 🎞️ Movie 7 -->
-    <div class="movie">
-      <img src="https://i.imghippo.com/files/TJ7763YKs.jpg" alt="Movie 4 Thumbnail">
-      <h3>Chhichhore</h3>
-      <p>actin movie</p>
-      <a href="https://youtu.be/TQtV-oTYNE4?si=dUt0VGatzwKMW9tS" class="btn">Watch Now</a>
-  </div>
-      <!-- 🎞️ Movie 8 -->
-    <div class="movie">
-      <img src="https://i.imghippo.com/files/AAx9848tIY.jpg" alt="Movie 4 Thumbnail">
-      <h3>Batti gul meter chalu</h3>
-      <p>actin movie</p>
-      <a href="https://youtu.be/S9Hbum_xcAo?si=RIlNHkosQoUCnRwB" class="btn">Watch Now</a>
-    </div>
-         <!-- 🎞️ Movie 9 -->
-    <div class="movie">
-      <img src="https://i.imghippo.com/files/tFg5938tE.jpg" alt="Movie 4 Thumbnail">
-      <h3>mera intkam dekhegi</h3>
-      <p>actin movie</p>
-      <a href="https://youtu.be/gyOFdkWx7j0?si=jKSoeBd-MHkgh9zO" class="btn">Watch Now</a>
-    </div>
-        <!-- 🎞️ Movie 10 -->
-    <div class="movie">
-      <img src="https://i.imghippo.com/files/iALm9343IKo.jpg" alt="Movie 4 Thumbnail">
-      <h3>Hate story 3</h3>
-      <p>actin movie</p>
-      <a href="https://youtu.be/dEnaHuRkkxI?si=cjRGiXmhyLbsmQW7" class="btn">Watch Now</a>
-    </div>   
-    <!-- 🎞️ Movie 11 -->
-    <div class="movie">
-      <img src="https://i.imghippo.com/files/Byl1172Kpk.jpg" alt="Movie 4 Thumbnail">
-      <h3>Mastermind</h3>
-      <p>actin movie</p>
-      <a href="https://youtu.be/7-Cstc7fgPg?si=6a88LVZPl-UoJxlz" class="btn">Watch Now</a>
-    </div>
-        <!-- 🎞️ Movie 12 -->
-    <div class="movie">
-      <img src="https://i.imghippo.com/files/TIH3691BU.jpg" alt="Movie 4 Thumbnail">
-      <h3>name of movie</h3>
-      <p>actin movie</p>
-      <a href="https://youtu.be/HarIdSznhfQ?si=XfnQ4jpotko9HPaf" class="btn">Watch Now</a>
-    </div>
-        <!-- 🎞️ Movie 13 -->
-    <div class="movie">
-      <img src="https://i.imghippo.com/files/SRv2655LGo.jpg" alt="Movie 4 Thumbnail">
-      <h3>name of movie</h3>
-      <p>actin movie</p>
-      <a href="https://youtube.com/shorts/yXDM1qZ0dos?si=lxzigQI-4g_MCGK7" class="btn">Watch Now</a>
-    </div>
-        <!-- 🎞️ Movie 14 -->
-    <div class="movie">
-      <img src="https://i.imghippo.com/files/el9604jk.jpg" alt="Movie 4 Thumbnail">
-      <h3>name of movie</h3>
-      <p>actin movie</p>
-      <a href="" class="btn">Watch Now</a>
-    </div>
-  <footer>
-    © 2025 Himanshu's Movie Page | Designed with ❤️
-  </footer>
+</section>
 
-  <script>
-    // 🔍 Search movie by title
-    function searchMovie() {
-      let input = document.getElementById('searchInput').value.toLowerCase();
-      let movies = document.getElementsByClassName('movie');
+<section id="plans">
+  <div class="card">
+    <h2>Online Learning Plans</h2>
 
-      for (let i = 0; i < movies.length; i++) {
-        let title = movies[i].getElementsByTagName('h3')[0].innerText.toLowerCase();
-        if (title.includes(input)) {
-          movies[i].style.display = "";
-        } else {
-          movies[i].style.display = "none";
-        }
-      }
-    }
-  </script>
+    <h3>📘 Online Test</h3>
+    <p>Weekly & Monthly online tests</p>
+    <button onclick="alert('Online Test coming soon')">Start Test</button>
+
+    <h3>🎥 Live Meeting</h3>
+    <p>Zoom / Google Meet based classes</p>
+    <button onclick="alert('Meeting link coming soon')">Join Meeting</button>
+
+    <h3>❓ Doubt Solving</h3>
+    <p>Ask questions & get answers</p>
+    <button onclick="alert('Doubt section coming soon')">Ask Doubt</button>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="card">
+    <h2>Contact</h2>
+    <p>📞 Phone: 9876543210</p>
+    <p>📧 Email: abctuition@gmail.com</p>
+    <p>📍 Location: Your City</p>
+  </div>
+</section>
+<div class="newstudent">
+  <h2>NEW STUDENT</h2>
+  <h3>GUILTY'S</h3>
+  <p>■All subject</p>
+  <p>■Fees 500</p>
+  <button onclick="alert('form is comming soon coming soon')">APPLY NOW</button>
+  
+  
+</div>
+
+<footer>
+  <p>© 2025 ABC Tuition Classes</p>
+</footer>
 
 </body>
 </html>
