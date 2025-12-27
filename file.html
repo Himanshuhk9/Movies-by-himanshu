@@ -4,25 +4,100 @@
   <meta charset="UTF-8">
   <title>ABC Tuition Classes</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: #f4f6f9;
-    }
+
+/* 📱 Mobile Responsive */
+@media (max-width: 500px) {
+
+  header h1 {
+    font-size: 24px;
+  }
+
+  nav a {
+    display: block;
+    margin: 10px 0;
+  }
+
+  section {
+    padding: 10px;
+  }
+
+  .card {
+    padding: 15px;
+  }
+
+  button {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+}
+
+/* 🖥️ Tablet + Desktop (Image OFF, Text Header ON) */
+@media (min-width: 768px) {
+
+  header {
+    background-image: none;        /* image hide */
+    background-color: #2c3e50;     /* simple color */
+    color: white;
+
+    padding: 40px 20px;
+    margin: 20px;
+    border-radius: 8px;
+  }
+
+}
+
+</style>
+  <style>
+   
+body {
+
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-image: url("bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+}
+    
 
     header {
-      background-color: #2c3e50;
-      color: white;
-      padding: 20px;
-      text-align: center;
+  background-image: url("head.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: px;
+      box-shadow:2px rgba(0,0,0,0.1);
+
+  padding: 7px 70px;
+  margin: 0px;
+  height: 100px;
+  text-align: center;
+  color: white;
+}
+
+/* Text readable banane ke liye overlay */
+.main-header::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.main-header h1,
+.main-header p {
+  position: relative;
+  z-index: 1;
+
     }
 
     nav {
-      background-color: #34495e;
-      padding: 10px;
-      margin: 20PX;
+      background-color: #5096DD;
+      padding: 0px;
+      margin: 0PX;
+      
       text-align: center;
     }
 
@@ -42,10 +117,31 @@
       padding: 20px;
       margin: 15px ;
       border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      background-image: url("card.jpg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      border-radius: px;
+      box-shadow:2px rgba(0,0,0,0.1);
+
+  padding: 
+    }
+    .plans{
+      background: white;
+      padding: 20px;
+      margin: 15px ;
+      border-radius: 8px;
+      background-image: url("plans.jpg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      border-radius: px;
+      box-shadow:2px rgba(0,0,0,0.1);
     }
     .about {
       background-color: white;
+      background-image:url("about.jpg");
+      background-position: center;
       padding: 20px;
       margin: 2px;
       border-radius:8px ;
@@ -57,6 +153,8 @@
       margin: 15px;
       border-radius: 8px;
       box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      background-image:url("newstudent.jpg");
+      background-position: center;
       
     }
     button {
@@ -85,12 +183,12 @@
 <body>
 
 <header>
-  <h1>THE GIDE Tuition Classes</h1>
-  <p>Offline & Online Learning Platform</p>
+  <h1></h1>
+  <p></p>
 </header>
 
 <nav>
-  <a href="#about">About</a>
+  <a href="#about">About Tracher</a>
   <a href="#classes">Classes</a>
   <a href="#plans">Online Plans</a>
   <a href="#contact"></a>
@@ -129,7 +227,7 @@
 </section>
 
 <section id="plans">
-  <div class="card">
+  <div class="plans">
     <h2>Online Learning Plans</h2>
 
     <h3>📘 Online Test</h3>
@@ -156,7 +254,7 @@
 </section>
 <div class="newstudent">
   <h2>NEW STUDENT</h2>
-  <h3>GUILTY'S</h3>
+  <h3>QUILTY'S</h3>
   <p>■All subject</p>
   <p>■Fees 500</p>
   <button onclick="alert('form is comming soon coming soon')">APPLY NOW</button>
@@ -165,7 +263,7 @@
 </div>
 
 <footer>
-  <p>© 2025 ABC Tuition Classes</p>
+  <p>© THE GIDE Tuition Classes</p>
 </footer>
 
 </body>
