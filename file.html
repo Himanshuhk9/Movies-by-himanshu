@@ -94,12 +94,19 @@ body {
     }
 
     nav {
-      background-color: #5096DD;
+      background-color: #FFFFFF;
       padding: 0px;
       margin: 0PX;
+      background-image: url("nav.jpg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
       
-      text-align: center;
+      
+      text-align:right;
     }
+    
+
 
     nav a {
       color: white;
@@ -112,7 +119,29 @@ body {
       padding: 20px;
     }
 
-    .card {
+   .card {
+  background-image: url("card.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  padding: 20px;
+  margin: 15px;
+  border-radius: 8px;
+  border: 80px;
+
+  box-shadow: 0 5px px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* 🔥 CARD HOVER ONLY */
+.card:hover {
+  transform: translateY(-6px) scale(1.02);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.25);
+
+    }
+
+    .plans{
       background: white;
       padding: 20px;
       margin: 15px ;
@@ -123,25 +152,29 @@ body {
       background-repeat: no-repeat;
       border-radius: px;
       box-shadow:2px rgba(0,0,0,0.1);
+    }
+ .plans:hover {
+  transform: translateY(-6px) scale(1.02);
+  box-shadow: 0 12px 25px rgba(183, 255, 0, 0.25);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 
-  padding: 
     }
-    .plans{
-      background: white;
-      padding: 20px;
-      margin: 15px ;
-      border-radius: 8px;
-      background-image: url("plans.jpg");
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-      border-radius: px;
-      box-shadow:2px rgba(0,0,0,0.1);
+    .newstudent:hover {
+  transform: translateY(-6px) scale(1.02);
+  box-shadow: 0 12px 25px rgba(0, 255, 131, 0.25);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
     }
+    .about:hover {
+  transform: translateY(-6px) scale(1.02);
+  box-shadow: 0 12px 25px rgba(0, 255, 131, 0.25);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    
     .about {
       background-color: white;
-      background-image:url("about.jpg");
-      background-position: center;
+      background-image:url("about.png");
+      background-position:center;
       padding: 20px;
       margin: 2px;
       border-radius:8px ;
@@ -167,16 +200,17 @@ body {
     }
 
     button:hover {
-      background-color: #1f6391;
+      background-color: #9EE1A4;
     }
 
-    footer {
-      background-color: #2c3e50;
-      color: white;
+.footer {
+      background-color: #FFFFFF;
+      color: rgba(0, 0, 0, 1)white;
       text-align: center;
       padding: 10px;
       margin-top: 20px;
     }
+    
   </style>
 </head>
 
@@ -188,12 +222,11 @@ body {
 </header>
 
 <nav>
-  <a href="#about">About Tracher</a>
-  <a href="#classes">Classes</a>
-  <a href="#plans">Online Plans</a>
+  <a style="color: #00CED1 ;" href="#about">```Tracher```</a>
+  <a style="color: #00CED1 ;" href="#classes">```Classes```</a>
+  <a style="color: #00CED1 ;" href="#plans">```` Plans````</a>
   <a href="#contact"></a>
 </nav>
-
 <section id="about">
   <div class="about">
     <h2>About Teacher</h2>
@@ -247,24 +280,24 @@ body {
 <section id="contact">
   <div class="card">
     <h2>Contact</h2>
-    <p>📞 Phone: 8986681693</p>
-    <p>📧 Email: theguide@gmail.com</p>
-    <p>📍 Location:Rajganj,Dhanbad Near i love mobile care</p>
+    <p>📞 Phone:8986681693</p>
+    <p>📧 Phone:theguide@gmail.com</p>
+    <p>📍 Location: Your City</p>
   </div>
 </section>
 <div class="newstudent">
   <h2>NEW STUDENT</h2>
-  <h3> FACILITY'S </h3>
+  <h3>QUILTY'S</h3>
   <p>■All subject</p>
   <p>■Fees 500</p>
   <button onclick="alert('form is comming soon coming soon')">APPLY NOW</button>
   
   
 </div>
-
+<div class="footer">
 <footer>
   <p>© THE GIDE Tuition Classes</p>
 </footer>
-
+</div>
 </body>
-</html>
+  </html>
